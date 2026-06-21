@@ -1,0 +1,270 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About Us",
+    "contact": "Contact",
+    "startProject": "Start Project",
+    "toggle3DOn": "Disable Immersive 3D Mode",
+    "toggle3DOff": "Enable Immersive 3D Scroll"
+  },
+  "hero": {
+    "visionBadge": "SAUDI VISION 2030 PARTNER",
+    "established": "Saudi Digital Excellence Since 2009",
+    "titleStrong": "We Transform Ideas",
+    "titleNormal": "Into Digital Reality",
+    "subtitle": "ASMA Advanced Technology (AAT) is your trusted Saudi partner achieving digital excellence through innovative software engineering and intelligent tech integrations.",
+    "ctaStart": "Start Your Project",
+    "ctaServices": "Explore Services",
+    "scroll": "Scroll to discover"
+  },
+  "stats": {
+    "experience": "Years of Innovation",
+    "projects": "Projects Delivered",
+    "quality": "Quality Success Rate",
+    "clients": "Active Clients"
+  },
+  "aboutUs": {
+    "badge": "WHO WE ARE",
+    "title": "A Decennial Heritage of Tech Leadership",
+    "subtitle": "Established in Riyadh in 2009, AAT is a licensed Saudi enterprise at the forefront of digital transformation under Commercial Registration CR 7003024853.",
+    "paragraph1": "Through decades of deep engineering excellence, we partner with leading public bodies and private ventures inside the Kingdom to prototype, scale, and secure high-availability systems.",
+    "paragraph2": "Aligned with the Kingdom's Vision 2030, we deliver sovereign technology capabilities that drive operational efficiency, user satisfaction, and scalable growth.",
+    "learnMore": "Learn More About Our Journey",
+    "ourValues": "Our Core Values",
+    "vision2030": {
+      "title": "Vision 2030 Integration",
+      "desc": "AAT is committed to building Saudi Arabia's digital future. By engineering secure national platforms, supporting local tech capabilities, and executing localized industrial-grade solutions, we are actively contributing to the Kingdom's national transformation agenda."
+    },
+    "value1": {
+      "title": "Excellence",
+      "desc": "We push boundaries and enforce stringent software quality standards in every line of code."
+    },
+    "value2": {
+      "title": "Innovation",
+      "desc": "Staying ahead of the technology curve with cloud architectures, serverless computing, and AI integration."
+    },
+    "value3": {
+      "title": "Partnership",
+      "desc": "We function as your embedded tech co-founders, steering your strategic roadmap with total integrity."
+    },
+    "value4": {
+      "title": "Quality",
+      "desc": "Engineered for 100% robust up-times, secure authorization, and frictionless high-speed user experience."
+    }
+  },
+  "services": {
+    "badge": "OUR INDUSTRIAL-GRADE SERVICES",
+    "title": "Engineered for Enterprise Performance",
+    "subtitle": "We provide end-to-end modern technology consulting, customized interface designs, and secure high-scale backend deployments for the Saudi market.",
+    "cta": "Get Started",
+    "techStack": "Tech Stack:",
+    "pricingRange": "Pricing Range:",
+    "web": {
+      "title": "Web Development",
+      "desc": "Architecting ultra-fast, high-converting, and SEO-optimized web applications with seamless server rendering and airtight security.",
+      "longDesc": "Whether building high-concurrency client portals, headless e-commerce structures, or corporate engines, we deliver enterprise-grade performance. Our systems are fortified against common vulnerabilities and optimized for the highest Lighthouse metrics."
+    },
+    "mobile": {
+      "title": "Mobile Apps",
+      "desc": "Developing visually immersive, native-performance iOS and Android mobile applications utilizing single-codebase velocity.",
+      "longDesc": "We engineer polished touch interfaces, native hardware integrations, and offline synchronization capabilities with Flutter. Our apps transition fluidly on mobile systems while preserving power-consumption and memory."
+    },
+    "desktop": {
+      "title": "Desktop & ERP Systems",
+      "desc": "Bespoke desktop operating clients, administrative dashboards, and customized ERP integrations to streamline local businesses.",
+      "longDesc": "Our WPF and .NET Core applications integrate with legacy systems, manage large-scale warehouse operations, and automate financial processes with localized tax compliant reporting in Saudi Arabia."
+    },
+    "ai": {
+      "title": "AI & Automation",
+      "desc": "Automating manual business workflows by injecting custom-trained large language models, agent systems, and reporting tools.",
+      "longDesc": "By leveraging safe Gemini and OpenAI APIs, custom cloud infrastructure, and tools like n8n and Microsoft Power BI, we eliminate manual bottlenecks and uncover deep data insights for decision makers."
+    },
+    "marketing": {
+      "title": "Digital Marketing",
+      "desc": "Amplifying your online brand authority using growth-focused search marketing, performance ads, and organic social strategy.",
+      "longDesc": "Our analytics-first approach ensures every advertising Riyal is accounted for. We design high-converting landing pages, optimize SEO positioning for local maps, and run high-efficiency acquisition campaigns."
+    },
+    "motion": {
+      "title": "Motion Graphics & Branding",
+      "desc": "Shaping memorable visual identities, promotional content reels, and elegant logos designed to capture user interest.",
+      "longDesc": "We align your visual branding with contemporary regional expectations. From corporate style guidelines to 2D/3D explainers, we articulate your technical value in beautiful, motion-designed details."
+    }
+  },
+  "techOrbit": {
+    "heading": "Technologies We Master"
+  },
+  "whyChooseUs": {
+    "badge": "WHY CHOOSE AAT",
+    "title": "A Digital Partner Built on Trust & Performance",
+    "subtitle": "Why top Saudi businesses select ASMA Advanced Technology for their high-stakes technological investments.",
+    "col1Title": "360° Integrated Solutions",
+    "col1Desc": "From discovery and visual product planning down to database architecture, automated tests, and deployment, we handle the entire project lifecycle.",
+    "col2Title": "Saudi Market Expert",
+    "col2Desc": "Deep local alignment with Saudi regulations, compliance guidelines, visual preferences, and localized billing/tax integrations.",
+    "col3Title": "Measurable Results",
+    "col3Desc": "We reject vague metrics. We design key performance indicators (KPIs) to monitor digital acquisition rates, loading speeds, and database query times."
+  },
+  "process": {
+    "badge": "OUR DEVELOPMENT LIFECYCLE",
+    "title": "How We Turn Ideas Into Real Value",
+    "subtitle": "Our highly structured, Agile engineering workflow ensures total clarity, swift progress, and continuous visual previews.",
+    "step1": "Discovery",
+    "step1Desc": "Defining structural features, user personas, flow diagrams, and detailed functional specs.",
+    "step2": "Design",
+    "step2Desc": "Forging beautiful client-approved wireframes, UI layouts, high-fidelity mockups, and micro-animations.",
+    "step3": "Development",
+    "step3Desc": "Writing type-safe code, setting up server-side routing, database endpoints, and core engine blocks.",
+    "step4": "Testing",
+    "step4Desc": "Validating multi-device responsiveness and executing comprehensive security and stress testing.",
+    "step5": "Launch & Grow",
+    "step5Desc": "Handling zero-downtime container deployment, monitoring operational logs, and coordinating marketing funnels."
+  },
+  "pricing": {
+    "badge": "INVESTMENT PACKAGES",
+    "title": "Bespoke Plans Crafted for Your Success",
+    "subtitle": "Choose an investment range that fits your immediate business objectives, fully scalable as you expand.",
+    "mostPopular": "Most Popular",
+    "starter": "Starter Package",
+    "growth": "Growth Package",
+    "full": "Enterprise Custom",
+    "sar": "SAR",
+    "cta": "Select This Package",
+    "features": {
+      "responsive": "Responsive High-Speed Website (1-5 pages)",
+      "cms": "Bespoke CMS Controls & Dynamic Content",
+      "basicSeo": "Basic Search Engine Optimization (SEO)",
+      "support3": "3 Months Dev Maintenance support",
+      "mobile": "iOS & Android Cross-platform App (Flutter)",
+      "adminPortal": "Custom Administrator Web Dashboard",
+      "api": "Robust backend API integration",
+      "firebase": "Secure Firestore Data Storage",
+      "hosting": "Cloud Run or Host setup & scaling",
+      "support12": "12 Months Priority Technical Support",
+      "erp": "ERP & Legacy System Sync",
+      "ai": "AI Automation integrations (OpenAI/n8n)",
+      "analytics": "Advanced Data BI Dashboard",
+      "launches": "Launch marketing & SEO Strategy"
+    }
+  },
+  "testimonials": {
+    "badge": "WHAT OUR PARTNERS SAY",
+    "title": "Endorsed by Saudi Decision Makers",
+    "subtitle": "Read reviews from founders and executives who chose AAT to scale their operational limits.",
+    "client1Name": "Eng. Faisal Al-Shammari",
+    "client1Role": "Product VP • Riyadh Logistics Group",
+    "client1Text": "AAT delivered a highly resilient warehouse management client that integrated perfectly with our existing .NET database ERP. Their Riyadh-local team understands Saudi logistics compliance like no other.",
+    "client2Name": "Sultan Bin Abdulaziz",
+    "client2Role": "Managing Partner • Al-Sovereign Capital",
+    "client2Text": "The mobile iOS and Android apps created by AAT are stunningly rapid and elegant. Submitting files is instant and leads are immediately routed to our security staff. Brilliant local engineering.",
+    "client3Name": "Dr. Sarah Al-Otaibi",
+    "client3Role": "Director of Technology • Advanced Health KSA",
+    "client3Text": "We automated our patient survey extractions using a custom LLM pipeline designed by AAT. Their compliance checks and deep understanding of Saudi standards are second to none."
+  },
+  "portfolio": {
+    "badge": "OUR CREATIVE SHOWCASE",
+    "title": "Engineered for Saudi Excellence",
+    "subtitle": "An overview of bespoke client systems, modern platforms, and mobile apps created by our team.",
+    "all": "All Solutions",
+    "web": "Web Platforms",
+    "mobile": "Mobile Apps",
+    "desktop": "Desktop & ERP",
+    "ai": "AI & Automation",
+    "techUsed": "Technologies:",
+    "viewCase": "Explore Details",
+    "close": "Close Details",
+    "project1": {
+      "title": "Riyadh Logistics Grid",
+      "category": "Web Platforms",
+      "desc": "A heavy-duty tracking hub organizing massive fleet coordination, fleet routes, and real-time delivery confirmations across Saudi Arabia.",
+      "challenge": "Client needed to handle thousands of active delivery points simultaneously with sub-second response times and precise offline synchronization.",
+      "solution": "We designed a customized Next.js web application coupled with server-side caching and atomic state updates, reducing latency by 45%."
+    },
+    "project2": {
+      "title": "Al-Ma'aly Financial Client",
+      "category": "Mobile Apps",
+      "desc": "A secure, encrypted wealth management application connecting high-velocity investors to customized portfolio dashboards.",
+      "challenge": "Airtight encryption and continuous data synchronization without compromising smartphone device power consumption or page speed.",
+      "solution": "Built utilizing type-safe Flutter engines combined with biometric authorization, local cache encryption, and real-time push streams."
+    },
+    "project3": {
+      "title": "Sovereign Industrial ERP",
+      "category": "Desktop & ERP",
+      "desc": "A massive desktop dashboard automating production tracking, stock levels, localized tax invoices, and reporting sheets.",
+      "challenge": "Fragmented stock records across 14 warehouses and manual excel logging that resulted in critical tracking errors and delays.",
+      "solution": "WPF and .NET 8 core systems binding warehouses into a single centralized dashboard with instant barcode-triggered state mutations."
+    },
+    "project4": {
+      "title": "Saudi Medical Extraction AI",
+      "category": "AI & Automation",
+      "desc": "An automated medical summary processor converting chaotic client files into structured, secure patient metrics.",
+      "challenge": "Manual reading of unstructured tables and medical scan write-ups took over 20 minutes per patient, creating a massive patient backlog.",
+      "solution": "A custom AI indexing pipeline processing unstructured clinical reports with highly scoped verification layers to ensure medical safety."
+    },
+    "project5": {
+      "title": "Tamkeen E-Academy Portal",
+      "category": "Web Platforms",
+      "desc": "A high-performance bilingual learning management portal serving active courses and testing sheets to students.",
+      "challenge": "Low client engagement and high loading times on high-latency 4G networks during peak national exam days.",
+      "solution": "Extremely lightweight static page rendering coupled with dynamic lightweight database queries, supporting over 10K parallel users."
+    },
+    "project6": {
+      "title": "Desert Bloom Digital Engine",
+      "category": "AI & Automation",
+      "desc": "A predictive smart marketing scheduler analyzing localized trend cycles and dispatching social media creatives.",
+      "challenge": "Optimizing advertising budget yields across fragmented localized Riyadh interest groups.",
+      "solution": "Power BI pipelines linked with custom scheduling algorithms that adjust advertising spend based on peak local micro-engagements."
+    }
+  },
+  "contact": {
+    "badge": "GET IN TOUCH",
+    "title": "Let's Consult on Your Digital Milestones",
+    "subtitle": "Drop us a message. Our local Riyadh engineering staff will respond with an initial free estimate in under 24 hours.",
+    "formHeading": "Send Us an Inquiry",
+    "successMessage": "Thank you! Your project request has been logged successfully. Our Riyadh team will follow up via email or phone within 2 hours.",
+    "errorMessage": "An error occurred while logging your message. Please try again or reach out on WhatsApp.",
+    "fields": {
+      "name": "Your Full Name",
+      "email": "Your Email Address",
+      "phone": "Your Phone Number (Optional)",
+      "service": "Service of Interest",
+      "budget": "Expected Budget Range (SAR)",
+      "message": "Project Details & Vision",
+      "submit": "Submit Project Request",
+      "submitting": "Uploading Request..."
+    },
+    "servicesOptions": {
+      "select": "Please Select a Service",
+      "web": "Web Development Platform",
+      "mobile": "Mobile iOS / Android Application",
+      "desktop": "Desktop & ERP Infrastructure",
+      "ai": "AI Automation Pipeline",
+      "marketing": "Digital-First Marketing Strategy",
+      "motion": "Branding & Motion Graphic Suite"
+    },
+    "budgetOptions": {
+      "select": "Select Estimated Budget",
+      "tier1": "10,000 - 18,000 SAR (Starter)",
+      "tier2": "30,000 - 55,000 SAR (Growth)",
+      "tier3": "60,000+ SAR (Enterprise)"
+    },
+    "info": {
+      "addressTitle": "Headquarters Address",
+      "addressText": "Office 106, Al Khaleejiah Center, Izdhar District, Riyadh, Saudi Arabia",
+      "phoneTitle": "Saudi Phone Hotline",
+      "emailTitle": "General Email Inbox",
+      "crTitle": "Commercial License",
+      "crText": "CR No. 7003024853"
+    },
+    "ready": "Ready to transform your ideas?"
+  },
+  "footer": {
+    "desc": "A leading Saudi digital agency offering premium engineering, immersive visual design, and secure cloud setups designed to realize Digital Saudi Vision 2030.",
+    "quickLinks": "Explore Navigation",
+    "servicesTitle": "Digital Solutions",
+    "legalTitle": "Corporate Inquiries",
+    "contactTitle": "Contact Riyadh Team",
+    "rights": "All rights reserved. Authorized Saudi CR No. 7003024853."
+  }
+}

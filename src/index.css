@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-cairo: "Cairo", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-blue: #1B7FE8;
+  --color-brand-navy: #0D1B3E;
+  --color-brand-teal: #0099A8;
+  --color-brand-gold: #C9A227;
+  --color-brand-light: #F0F6FF;
+  --color-brand-dark-text: #1C2833;
+  --color-brand-green: #006C35;
+}
+
+/* Base custom definitions */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--color-brand-navy);
+  color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+  transition: background-color 0.5s ease;
+}
+
+/* Islamic Geometric Pattern Backdrop Utility */
+.islamic-pattern {
+  background-image: radial-gradient(rgba(27, 127, 232, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.islamic-grid-premium::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 0 L120 60 L60 120 L0 60 Z M60 20 L100 60 L60 100 L20 60 Z M60 40 L80 60 L60 80 L40 60 Z' fill='%231B7FE8' fill-opacity='0.5' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+/* Premium Glow Effects */
+.glow-card {
+  position: relative;
+  border: 1px solid rgba(27, 127, 232, 0.15);
+  background: rgba(13, 27, 62, 0.6);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(27, 127, 232, 0.4), rgba(0, 153, 168, 0.4), transparent, transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  border-borderColor: rgba(27, 127, 232, 0.4);
+  box-shadow: 0 12px 40px -15px rgba(27, 127, 232, 0.3);
+}
+
+.glow-card:hover::after {
+  opacity: 1;
+}
+
+/* Custom Webkit scrollbar for premium brand aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B7FE8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0099A8;
+}
+
+/* Cursor glow styling */
+.custom-cursor {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #1B7FE8;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: screen;
+  transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.custom-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #0099A8;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* 3D scrolling system properties */
+.viewport-3d {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at center, #0e1d44 0%, #040814 100%);
+}
+
+.stage-3d {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 1.2s cubic-bezier(0.12, 1, 0.24, 1);
+}
+
+.slide-3d {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Subtle standard animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes slow-pulse {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.35; }
+}
+
+.animate-pulse-slow {
+  animation: slow-pulse 10s ease-in-out infinite;
+}

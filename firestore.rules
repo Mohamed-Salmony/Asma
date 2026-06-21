@@ -1,0 +1,84 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global Safe catch-all deny rule
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Global reusable security primitives
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'mohamedsamysalmony@gmail.com' ||
+        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin')
+      );
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Entities structural validations
+    function isValidLead(data) {
+      return data.keys().hasAll(['name', 'email', 'service', 'message', 'status'])
+        && data.keys().size() <= 8
+        && data.name is string && data.name.size() <= 100
+        && data.email is string && data.email.size() <= 100
+        && data.service is string && data.service.size() <= 100
+        && data.message is string && data.message.size() <= 5000
+        && data.status in ['new', 'contacted', 'in-progress', 'closed'];
+    }
+
+    function isValidInteraction(data) {
+      return data.keys().hasAll(['question', 'answer', 'rating', 'language'])
+        && data.keys().size() <= 7
+        && data.question is string && data.question.size() <= 1000
+        && data.answer is string && data.answer.size() <= 5000
+        && data.rating in ['like', 'dislike', 'none']
+        && data.language in ['en', 'ar'];
+    }
+
+    function isValidUserProfile(data) {
+      return data.keys().hasAll(['uid', 'email', 'role'])
+        && data.keys().size() <= 6
+        && data.uid is string && data.uid.size() <= 128
+        && data.email is string && data.email.size() <= 128
+        && data.role in ['user', 'admin'];
+    }
+
+    // Match patterns
+    match /leads/{leadId} {
+      allow create: if isValidId(leadId) && isValidLead(request.resource.data);
+      allow get, list: if isAdmin();
+      allow update, delete: if isAdmin() && isValidLead(request.resource.data);
+    }
+
+    match /interactions/{interactionId} {
+      allow create: if isValidId(interactionId) && isValidInteraction(request.resource.data);
+      allow get, list: if true; // anyone can get or query listings to extract aggregated stats/feedback carousel
+      allow update: if isValidInteraction(request.resource.data); // anyone can cast upvotes/downvotes
+      allow delete: if isAdmin();
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId)
+        && isValidUserProfile(request.resource.data)
+        && (request.resource.data.role == 'user' || request.auth.token.email == 'mohamedsamysalmony@gmail.com');
+      allow update: if isOwner(userId)
+        && isValidUserProfile(request.resource.data)
+        && request.resource.data.role == resource.data.role; // prevent unprivileged privilege escalation
+      allow delete: if isAdmin();
+    }
+  }
+}

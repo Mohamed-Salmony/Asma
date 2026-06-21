@@ -1,0 +1,130 @@
+{
+  "entities": {
+    "lead": {
+      "title": "Lead",
+      "description": "A contact and project inquiry submission from a prospective client.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the contact person."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Email address of the contact person."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the contact person."
+        },
+        "service": {
+          "type": "string",
+          "description": "Selected service name (e.g. web, mobile, desktop, AI, marketing, design)."
+        },
+        "budget": {
+          "type": "string",
+          "description": "Estimated budget range in SAR."
+        },
+        "message": {
+          "type": "string",
+          "description": "Detailed description of the project."
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of when the request was made."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["new", "contacted", "in-progress", "closed"],
+          "description": "The processing status of this lead."
+        }
+      },
+      "required": ["name", "email", "service", "message", "status"]
+    },
+    "interaction": {
+      "title": "Chatbot Interaction",
+      "description": "A record of questions posed to the customer support chatbot with ratings and details.",
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "description": "User question."
+        },
+        "answer": {
+          "type": "string",
+          "description": "AI chatbot reply."
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Time of interaction."
+        },
+        "rating": {
+          "type": "string",
+          "enum": ["like", "dislike", "none"],
+          "description": "Feedback sentiment rating."
+        },
+        "language": {
+          "type": "string",
+          "description": "Interface language (en/ar) used."
+        },
+        "userEmail": {
+          "type": "string",
+          "description": "Email if logged in, otherwise anonymous."
+        }
+      },
+      "required": ["question", "answer", "rating", "language"]
+    },
+    "userProfile": {
+      "title": "User Profile",
+      "description": "Stored meta values for registered clients and system administrators.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Unique user credentials identifier."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Registered credentials email."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Visual presentation display name."
+        },
+        "photoURL": {
+          "type": "string",
+          "description": "Profile picture avatar URL."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["user", "admin"],
+          "description": "Authorization clearances tier."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of account registration."
+        }
+      },
+      "required": ["uid", "email", "role"]
+    }
+  },
+  "firestore": {
+    "leads/{leadId}": {
+      "schema": "lead",
+      "description": "Client project inquiries submission"
+    },
+    "interactions/{interactionId}": {
+      "schema": "interaction",
+      "description": "AI customer support chatbot conversations"
+    },
+    "users/{userId}": {
+      "schema": "userProfile",
+      "description": "Profiles of system accounts and visitors"
+    }
+  }
+}
